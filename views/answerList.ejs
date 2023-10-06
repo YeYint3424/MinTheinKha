@@ -1,0 +1,18 @@
+<%- include('./main/header')%>
+
+    <div class="d-flex align-items-center justify-content-center mt-2">
+        <a href="/"><button class="btn btn-back">နောက်သို့</button></a>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-2">
+        <p class="note-1"><%=question.questionName%></p>
+        <input type="hidden" value="<%=question.questionNo%>" id="questionNo" class="questionNo">
+        
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-2">
+        <div class="grid-container"></div>
+    </div>
+
+
+
+<script src="/answerList.js"></script>
+<%- include('./main/footer')%>
