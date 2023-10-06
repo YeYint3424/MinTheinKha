@@ -65,16 +65,23 @@ footer{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-gap: 10px; 
+    grid-gap: 1px; 
     max-width: 900px;
     margin: 0 auto; 
 }
 
 .grid-item {
+    font-size: 15px;
+    color: white !important;
     background-color: #ddd; 
-    padding: 10px;
+    padding: 1px;
     text-align: center;
     border: 1px solid #999;
+    width: 40px !important;
+    border-radius: 3px !important;
+}
+.grid-item:hover{
+    background-color: #6d4840 !important;
 }
 
 .grid-item:nth-child(odd) {

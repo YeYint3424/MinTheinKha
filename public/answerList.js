@@ -18,7 +18,6 @@ function answerList(questionNo) {
             console.log('Question:', data.question);
             console.log('Number List Length:', data.numberList.length);
             const numbers = data.numberList;
-            let numberList = [];
             
                 const gridContainer = document.querySelector('.grid-container');
 
@@ -27,7 +26,7 @@ function answerList(questionNo) {
                         const gridItem = document.createElement('div');
                         const anchor = document.createElement("a");
                         anchor.classList.add("text-decoration-none", "text-light");
-                        gridItem.classList.add('grid-item');
+                        gridItem.classList.add('btn','grid-item');
                         
                         
                         const index = (i - 1) * 9 + j - 1;
